@@ -15,16 +15,22 @@
   (made own header file to read input)
 
 #️⃣Controls:
+
 - **Key**: Move Snake (Up-"W", Down-"S", Left-"A", Right-"D")
 
 #️⃣About SnakeInput.h:
+
 •The SnakeInput.h file handles user input for controlling the snake in the game.    It  uses Windows-specific functions (GetAsyncKeyState) to detect key presses without blocking program execution.
 
 •Detects WASD or arrow keys for movement.
+
 •Uses GetAsyncKeyState() for real-time key detection.
+
 •Returns \0 when no key is pressed, preventing unnecessary direction changes.
 
+
 #️⃣Limitations:
+
 -This Snake Game is designed to **work on Windows OS**. It utilizes Windows-specific
  libraries such as *windows.h* for console manipulation (SetConsoleCursorPosition, Sleep, and system("cls")).
 
