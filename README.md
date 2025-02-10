@@ -6,7 +6,7 @@
 
  #️⃣Features:
 - Tried to cover all the necessary points mentioned in the Project 1 Document.
-- Classic snake gameplay on a *40x40 grid*
+- Classic snake gameplay on a *25x50 grid*
 - Modular design for easy readability and modifications
 - Real-time user input handling
 - As the snake eats the food (represented using symbol "*" )the lenght increases 
