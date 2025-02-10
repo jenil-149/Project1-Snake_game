@@ -1,6 +1,7 @@
 # Project1-Snake_game
 
  •Snake Game using C++
+ 
  A fun and simple Snake Game built in C++ using Object-Oriented Programming (OOP) principles. Navigate the snake, eat food, and avoid crashing into the borders!
 
  #️⃣Features:
