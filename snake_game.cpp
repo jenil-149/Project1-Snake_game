@@ -123,14 +123,18 @@ public:
 
     void displayScore()
     {
-        gotoxy(w + 5, 2);
+        gotoxy(w + 5, 10);
         cout << "Score: " << score;
     }
 
+    // With gotoxy() (Smooth Display)
+    // Only updates positions that change.
     void gotoxy(int x, int y)
     {
-        COORD coord = {static_cast<SHORT>(x), static_cast<SHORT>(y)};
+        COORD coord = {static_cast<SHORT>(x), static_cast<SHORT>(y)}; // COORD is a Windows-specific struct that holds (x, y) positions.
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+        // SetConsoleCursorPosition(): Moves the cursor to coord in the console.
+        // GetStdHandle(STD_OUTPUT_HANDLE): Gets the console output handle.
     }
 
     void draw()
