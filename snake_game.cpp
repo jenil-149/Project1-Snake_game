@@ -202,6 +202,7 @@ int main()
         b->getInput();
         b->draw();
         Sleep(120);
+        // Sleep(120-5*(b->getScore()));
     }
 
     // Display final score when the game ends
